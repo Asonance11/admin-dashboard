@@ -4,3 +4,16 @@
 	--white: #f0f9ff;
 	--yellow: #f59e0b;
 }
+body {
+	display: grid;
+	height: 100vh;
+	grid-template-columns: 1fr 5fr;
+}
+.sidebar {
+	grid-column: 1 / 2;
+}
+.main-content {
+	grid-column: 2 / -1;
+	display: grid;
+	grid-template-rows: 1fr 6fr;
+}
