@@ -4,5 +4,5 @@ an admin dashboard
 
 ## Links
 
-_[Icons](https://materialdesignicons.com/)
-_[Photo](https://www.pexels.com/)
+- [Icons](https://materialdesignicons.com/)
+- [Photo](https://www.pexels.com/)
