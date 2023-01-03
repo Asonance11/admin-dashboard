@@ -3,7 +3,7 @@
 	--blue-700: #0369a1;
 	--white: #fff;
 	--yellow: #f59e0b;
-	--grey: #acacac;
+	--grey: #afafaf;
 	--image: url(./pexels-gofiwa-kgang-14900126.jpg);
 }
 * {
@@ -22,6 +22,7 @@ body {
 /* sidebar styling*/
 .sidebar {
 	grid-column: 1 / 2;
+	grid-row: 1 / -1;
 	background-color: var(--blue-600);
 	color: var(--white);
 	padding: 20px 20px;
@@ -43,14 +44,11 @@ body {
 	padding-top: 20px;
 	font-size: 1.1rem;
 }
-.main-content {
-	grid-column: 2 / 3;
-	display: grid;
-	grid-template-rows: 1fr 3fr;
-}
 
 /*Header Styling*/
 .header {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
 	padding: 20px 40px;
 	background-color: var(--white);
 	display: flex;
@@ -140,4 +138,75 @@ body {
 }
 .header-buttons button:hover {
 	transform: scale(1.1);
+}
+
+.main {
+	grid-column: 2 / 3;
+	grid-row: 2 / -1;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	background-color: var(--grey);
+	padding: 20px 40px;
+}
+.projects {
+	grid-column: 1 / -1;
+}
+.project-header {
+	font-size: 22px;
+	font-weight: 600;
+}
+.card-area {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.card {
+	background-color: var(--white);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 48%;
+	min-width: 265px;
+	height: 180px;
+	background-image: linear-gradient(
+		left,
+		var(--blue-600),
+		var(--blue-600) 2%,
+		transparent 2%,
+		transparent 100%
+	);
+	background-image: -webkit-linear-gradient(
+		left,
+		var(--blue-600),
+		var(--blue-600) 2%,
+		transparent 2%,
+		transparent 100%
+	);
+	padding: 30px 20px 20px 20px;
+	margin-top: 20px;
+	border-radius: 5px;
+}
+.card-header {
+	font-size: 18px;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+.card-description {
+	font-size: 13px;
+	color: rgb(88, 88, 88);
+	padding-right: 20px;
+}
+.icon-container {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 20px;
+	cursor: pointer;
+}
+.icon-container svg {
+	transition: 0.3s ease-in-out;
+}
+.icon-container svg:hover {
+	color: var(--blue-600);
 }
