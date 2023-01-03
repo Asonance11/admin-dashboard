@@ -3,7 +3,7 @@
 	--blue-700: #0369a1;
 	--white: #fff;
 	--yellow: #f59e0b;
-	--grey: #afafaf;
+	--grey: #e2e8f0;
 	--image: url(./pexels-gofiwa-kgang-14900126.jpg);
 }
 * {
@@ -186,6 +186,7 @@ body {
 	padding: 30px 20px 20px 20px;
 	margin-top: 20px;
 	border-radius: 5px;
+	box-shadow: 0 2px 3px #6b7280;
 }
 .card-header {
 	font-size: 18px;
