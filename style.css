@@ -1,9 +1,9 @@
 :root {
 	--blue-600: #0284c7;
 	--blue-700: #0369a1;
-	--white: #f0f9ff;
+	--white: #fff;
 	--yellow: #f59e0b;
-	--grey: #9ca3af;
+	--grey: #acacac;
 	--image: url(./pexels-gofiwa-kgang-14900126.jpg);
 }
 * {
@@ -16,7 +16,8 @@
 body {
 	display: grid;
 	height: 100vh;
-	grid-template-columns: 1fr 5fr;
+	grid-template-columns: 1fr 4fr;
+	grid-template-rows: 1fr 4fr;
 }
 /* sidebar styling*/
 .sidebar {
@@ -43,9 +44,9 @@ body {
 	font-size: 1.1rem;
 }
 .main-content {
-	grid-column: 2 / -1;
+	grid-column: 2 / 3;
 	display: grid;
-	grid-template-rows: 1fr 6fr;
+	grid-template-rows: 1fr 3fr;
 }
 
 /*Header Styling*/
@@ -55,7 +56,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-	box-shadow: 0 3px 3px var(--grey);
+	box-shadow: 0 3px 3px #6b7280;
 }
 .header-top {
 	display: flex;
