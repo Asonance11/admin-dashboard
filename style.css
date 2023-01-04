@@ -135,10 +135,6 @@ body {
 	border: none;
 	background-color: var(--blue-700);
 	color: var(--white);
-	transition: all 0.3s ease;
-}
-.header-buttons button:hover {
-	transform: scale(1.1);
 }
 
 .main {
@@ -157,7 +153,7 @@ body {
 }
 .project-header {
 	font-size: 22px;
-	font-weight: 600;
+	font-weight: 500;
 }
 .card-area {
 	display: flex;
@@ -221,7 +217,7 @@ body {
 }
 .announcements-header {
 	font-size: 22px;
-	font-weight: 600;
+	font-weight: 500;
 }
 .announcements-section {
 	display: flex;
@@ -242,4 +238,58 @@ body {
 .text-description {
 	font-size: 11px;
 	color: rgb(88, 88, 88);
+}
+.trending {
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+}
+.trending-header {
+	font-size: 22px;
+	font-weight: 500;
+}
+.trending-section {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	margin-top: 20px;
+	background-color: var(--white);
+	border-radius: 5px;
+	box-shadow: 1px 2px 3px #6b7280;
+	padding: 20px 20px;
+	min-width: 231px;
+}
+.trending-profile {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.trending-profile .image {
+	background-image: var(--image);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+.profile-details {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.username {
+	font-size: 12px;
+	font-weight: 400;
+	margin-bottom: 3px;
+}
+.user-description {
+	font-size: 12px;
+	color: rgb(88, 88, 88);
+}
+.clickable {
+	transition: 0.3s ease-in-out;
+	cursor: pointer;
+}
+.clickable:hover {
+	transform: scale(1.1);
 }
